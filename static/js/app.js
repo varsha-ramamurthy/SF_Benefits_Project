@@ -40,25 +40,32 @@ function buildCharts(Id) {
 
     var data = [trace1];
 
-    Plotly.newPlot('bar', data);
+    var layout = {
+      title: "Compensation Breakdown"
+    };
+
+    Plotly.newPlot('bar', data, layout);
 
 
     // @TODO: Build a Pie Chart
-    // HINT: You will need to use slice() to grab the top 10 sample_values,
-    // otu_ids, and labels (10 each).
     d3.json(url).then(function(data) {
-      var pieValue = data.sample_values.slice(0,10);
-      var pielabel = data.otu_ids.slice(0, 10);
-      var pieHover = data.otu_labels.slice(0, 10);
-
-      var data = [{
+      var pieValue = [data.BasePay, data.OvertimePay, data.OtherPay, data.Benefits, data.TotalPayBenefits];
+      var pielabel = ['Base Pay', 'Overtime Pay', 'Other Pay', 'Benefits', 'Total Pay Benefits'];
+      
+      
+      var trace2 = {
         values: pieValue,
         labels: pielabel,
-        hovertext: pieHover,
         type: 'pie'
-      }];
+      };
 
-      Plotly.newPlot('pie', data);
+      var data2 = [trace2];
+
+      var layout = {
+        title: "Percentage of Compensation of " + data.EmployeeName,
+      };
+
+      Plotly.newPlot('pie', data2, layout);
     });
   });
 };
