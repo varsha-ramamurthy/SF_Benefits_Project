@@ -36,5 +36,5 @@ function markerSize(size) {
     // Setting our circle's radius equal to the output of our markerSize function
     // This will make our marker's size proportionate to its population
     radius: markerSize(sf_data.size)
-  }).bindPopup("<h1>" + sf_data.name + "</h1> <hr> <h2>Population: " + sf_data.population + "</h2> <hr> <h3>Area: " + sf_data.population + " sq. mi</h3>").addTo(myMap);
+  }).bindPopup("<h1>" + sf_data.name + "</h1> <hr> <h2>Population: " + sf_data.population + "</h2> <hr> <h3>Area: " + sf_data.size + " sq. mi</h3>").addTo(myMap);
 
