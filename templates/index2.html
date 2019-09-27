@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>D3Times</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../static/js/style.css">
+  <link rel="stylesheet" type="text/css" href="../static/js/d3Style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body background="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/1920px-GoldenGateBridge-001.jpg">
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index2.html">Scatter Plot</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Leaflet</a>
+                    </li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+  <div class="container" style="background-color: white">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <h1>Benefit Trends in the San Francisco Job Market</h1>
+      </div>
+    </div>
+    <div class="row" style="background-color: white">
+      <div class="col-xs-12  col-md-9">
+        <div id="line">
+          <!-- We append our chart here. -->
+        </div>
+      </div>
+    </div>
+    <div class="row" style="background-color: white">
+      <div class="col-xs-12  col-md-9">
+        <div class="article">
+          <h2>Trends Observed in Benefits Offered From 2011-2014 in the San Francisco Job Market</h2>
+          <p>Benefits offered in the job market in San Francisco in 2011 appear to be virtually none. However, as the years
+            progress, we see an increase of benefits offered with jobs. This progression shows with each year. From this, we can 
+            infer that the job market in San Francisco is improving with time, in offering benefits.
+          </p>
+
+          <p>Upon viewing total pay over the years, some outliers close to an annual income of $550,000 in 2011 have been observed. In 2014, outliers at $400,000 and $500,000 were observed.
+            Not counting the 2 outliers in 2011, a consistent trend showing increase in annual income can be shown over the years.
+            From here, we can infer a trend in better job prospects over the years. As the same trend is observed in overall pay with benefits,
+            we can also infer that the benefits offered within the job market of San Francisco have improved
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="../static/js/app2.js"></script>
+
+</body>
+
+</html>
